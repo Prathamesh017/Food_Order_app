@@ -16,12 +16,15 @@ function Cart() {
 
   },[cartitems,state])
 
+
   function calculateTotal(){
   
     let  total=0;
     state.cart.map((i)=>{
-      total+=i.totalprice;
+     return  total+=i.totalprice;
     })
+
+
     setFinalTotal(total);
   }
   const addChanges=({item,op})=>{

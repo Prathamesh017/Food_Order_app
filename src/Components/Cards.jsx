@@ -1,24 +1,21 @@
-import  menu from "../data";
+// import  menu from "../data";
 import {Link} from "react-router-dom";
 import { DataContext } from "../Context/Context";
 import "./Cards.css";
 function Cards({category}) {
 const {state,dispatch}=DataContext();    
+const menu=state.menu;
 
 const setCategory=()=>{
 if(category==="All" || category===undefined){
 return menu;
 }
 else{
-const data=menu.filter(item=>{
-
-return (item.category===category?item:"");
-  });
+const data=menu.filter((item)=>item.category===category);
   return data;
 }
 }
 const placeOrder=(item)=>{
-  
   dispatch({type:"Order_Placed",payload:item})
  
 }

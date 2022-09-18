@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import "./FoodComponent.css";
-
 import { FormControl,Select,InputLabel,MenuItem} from "@mui/material";
 import Cards from './Cards';
-
-
 function FoodComponent() {
 const [category,setCategory]=useState(undefined);
-
 const changeCategory=(e)=>{
   setCategory(e);
 }
