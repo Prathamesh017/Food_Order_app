@@ -1,6 +1,6 @@
 import React from 'react'
-import FoodComponent from './FoodComponent'
-import Sidebar from './Sidebar'
+import FoodComponent from './FoodComponent.jsx'
+import Sidebar from './Sidebar.jsx'
 import "./Home.css";
 function Home() {
   return (

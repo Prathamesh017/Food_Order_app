@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { DataContext } from "../Context/Context";
+import { DataContext } from "../Context/Context.jsx";
 import { Link } from "react-router-dom";
 import { Alert } from "@mui/material";
 import "./Cart.css";

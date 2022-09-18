@@ -1,6 +1,6 @@
 import React from 'react'
-import Cart from './Components/Cart';
-import Home from './Components/Home';
+import Cart from './Components/Cart.jsx';
+import Home from './Components/Home.jsx';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import "./style.css";
 

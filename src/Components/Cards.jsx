@@ -1,6 +1,6 @@
 // import  menu from "../data";
 import {Link} from "react-router-dom";
-import { DataContext } from "../Context/Context";
+import { DataContext } from "../Context/Context.jsx";
 import "./Cards.css";
 function Cards({category}) {
 const {state,dispatch}=DataContext();    
